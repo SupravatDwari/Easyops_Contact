@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-logo {
@@ -21,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -35,4 +37,158 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Table Styles */
+.table-responsive {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table th {
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.table td {
+  border: 1px solid black;
+}
+.table-container{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+th, td {
+  width: 500px;
+  font-size: large;
+  text-align: center;
+  padding: 20px;
+  background-color: #909fae;
+  border: 2px solid black;
+}
+.info{
+  background-color: #dadee2;
+  font-weight: 450;
+}
+.table td:last-child {
+  text-align: center;
+}
+
+.table td:last-child button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 18px;
+}
+
+.table td:last-child button:hover {
+  cursor: pointer;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 400px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  min-width: 200px;
+  max-width: 400px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  /* background-color: #fff; */
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #495057;
+  /* background-color: #fff; */
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Search Input Styles */
+.search-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon i {
+  position: absolute;
+  left: 10px;
+  font-size: 18px;
+  color: #999;
+}
+
+.search-icon input {
+  padding-left: 30px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .table td:last-child {
+    padding-right: 0;
+  }
+
+  .table td:last-child button {
+    margin-top: 5px;
+  }
+}
+input#firstName {
+  width: 180px;
+  margin-right: 1.5rem;
+}
+input#lastName {
+  width: 180px;
+}
+input#customerNumber{
+  width:392px;
+}
+input#search{
+  width:650px;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat left 10px;
+  margin-bottom: 2rem;
+  margin-left: 50px;
+}
+button.save{
+  margin-bottom: 1.5rem;
+  width:400px;
+  height:50px;
+  font-size: medium;
+  background-color: rgb(114, 211, 114);
 }
